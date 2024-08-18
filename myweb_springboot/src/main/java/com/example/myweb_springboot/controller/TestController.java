@@ -1,6 +1,7 @@
 package com.example.myweb_springboot.controller;
 
-
+import com.example.myweb_springboot.service.TestService;
+import com.example.myweb_springboot.vo.TestVo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +13,10 @@ import java.util.List;
 
 @Controller
 public class TestController {
+    private static TestService testService;
+    public TestController(TestService testService){
+        this.testService = testService;
+    }
 
 
     @RequestMapping(value = "/home")
@@ -55,4 +60,21 @@ public class TestController {
         return mav;
     }
 
+    @RequestMapping(value = "/user")
+    @ResponseBody
+    public TestVo getUesr(){
+        List<TestVo> user = testService.selectTest();
+        return user.get(0);
+    }
+    @RequestMapping(value = "/user/mav")
+    public ModelAndView getUesrView(){
+        ModelAndView mav = new ModelAndView("mav");
+
+        List<TestVo> user = testService.selectTest();
+        mav.addObject("user",user.get(0));
+
+
+
+        return mav;
+    }
 }
