@@ -12,5 +12,9 @@
 <c:forEach var="item" items="${list}" varStatus="idx">
     ${idx.index}, ${item} <br />
 </c:forEach>
+
+<input type=radio name ="type" value="bank">
+<input type=radio name ="type" value="stock">
+
 </body>
 </html>
