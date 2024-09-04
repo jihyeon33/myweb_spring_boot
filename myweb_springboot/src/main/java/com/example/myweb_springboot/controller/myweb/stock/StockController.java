@@ -13,4 +13,9 @@ public class StockController {
         return mav;
     }
 
+    @RequestMapping(value = "/main")   //동작함
+    public ModelAndView mainPage() throws Exception{
+        ModelAndView mav = new ModelAndView("/myweb/stock/main");
+        return mav;
+    }
 }
