@@ -2,7 +2,7 @@
 
 ### system architecture (시스템 구성도)
 
-![아키텍처](https://github.com/user-attachments/assets/49baf616-0b4e-471c-8b26-c113abfda984)
+![아키텍처](https://github.com/user-attachments/assets/7de687f5-ecca-4e85-bf8e-e4ab1de2240b)
 
 ---
 ### skill
