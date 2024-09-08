@@ -12,7 +12,7 @@
 <body>
 
 <div>
-    <a href ="/stock/new" target="_blank">신규 등록</>
+    <a href ="/stock/new" target="_blank">신규 등록</>  <!--동작안함-->
 </div>
 
 </body>
